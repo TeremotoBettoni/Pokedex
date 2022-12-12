@@ -47,7 +47,17 @@
             justify-content: center; 
             margin-top: 260px;
         }
-        
+        #nombrepok {
+            display: flex;
+            justify-content: center;
+            font-size: xx-large;
+            font-weight: 600;
+        }
+        .datospokemon {
+            margin-top: 190px;
+            margin-left: 150px;
+            font-weight: 800;
+        }
         
     </style>
     <script>
@@ -75,7 +85,7 @@
 
                     console.log(imagen)
 
-                    $('#nombrepok').text('Nombre: '+nombre);
+                    $('#nombrepok').text(nombre);
                     $('#peso').text('Peso: '+peso);
                     $('#tipo').text('Tipo: '+tipo);
                     $('#imgpoke').html('<img src="'+ imagen +'" alt="pok">')
@@ -108,11 +118,10 @@
                 <div class="col-sm-6">
                     <div class="card" id="pokecard">
                         <!--<div id="pokemongif"></div>-->
-                        <div style="">
-                            
+                        <div>
                             <div id="imgpoke"></div>
-                            <div >
-                                <p id="nombrepok"></p>
+                            <p id="nombrepok"></p>
+                            <div class="datospokemon">
                                 <p id="peso"></p>
                                 <p id="tipo"></p>
                             </div>
