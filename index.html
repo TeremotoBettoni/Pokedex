@@ -61,6 +61,108 @@
             text-shadow: 1px 1px #000;
             
         }
+    @media screen and (max-width: 480px) {
+        main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .pokedex {
+            width: 350px;
+            margin: auto;
+            text-align: center;
+            font-weight: 900;
+            background-color: rgb(52, 52, 255); 
+            border-radius: 10px;
+            color: white;
+        }
+        #pokemones{
+            background-color: rgb(143, 143, 197);
+            border-radius: 10PX;
+            height: 100px;
+            overflow-x: hidden; /*para manejar todo lo que se desvorda del contenedor*/
+            overflow-y: scroll;
+        }
+        #pokecard{
+            background-image: url("assets/img/pokedex\ -\ copia.png");
+            width: 21rem; 
+            height: 350px; 
+            border-radius: 100PX;
+            background-color: black;
+        }
+        #imgpoke{
+            display: flex; 
+            height: 150px; 
+            justify-content: center; 
+            margin-top: 65px;
+        }
+        .datospokemon {
+            margin-top: 10px;
+            margin-left: 115px;
+            font-weight: 800;
+            color: white;
+            text-shadow: 1px 1px #000;
+            
+        }
+        #peso{
+            margin-top: 25px;
+            margin-bottom: 0rem;
+        }
+        #tipo{
+            margin-bottom: 0rem;
+        }
+    }
+    @media screen and (min-width: 481px) and  (max-width: 1023px){
+        main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .pokedex {
+            width: 350px;
+            margin: auto;
+            text-align: center;
+            font-weight: 900;
+            background-color: rgb(52, 52, 255); 
+            border-radius: 10px;
+            color: white;
+        }
+        #pokemones{
+            background-color: rgb(143, 143, 197);
+            border-radius: 10PX;
+            height: 100px;
+            overflow-x: hidden; /*para manejar todo lo que se desvorda del contenedor*/
+            overflow-y: scroll;
+        }
+        #pokecard{
+            background-image: url("assets/img/pokedex\ -\ copia.png");
+            width: 21rem; 
+            height: 350px; 
+            border-radius: 100PX;
+            background-color: black;
+        }
+        #imgpoke{
+            display: flex; 
+            height: 150px; 
+            justify-content: center; 
+            margin-top: 65px;
+        }
+        .datospokemon {
+            margin-top: 10px;
+            margin-left: 115px;
+            font-weight: 800;
+            color: white;
+            text-shadow: 1px 1px #000;
+            
+        }
+        #peso{
+            margin-top: 25px;
+            margin-bottom: 0rem;
+        }
+        #tipo{
+            margin-bottom: 0rem;
+        }
+    }
         
     </style>
     <script>
@@ -89,7 +191,7 @@
                     console.log(imagen)
 
                     $('#nombrepok').text(nombre);
-                    $('#peso').text('Peso: '+peso);
+                    $('#peso').text('Peso: '+peso+' km');
                     $('#tipo').text('Tipo: '+tipo);
                     $('#imgpoke').html('<img src="'+ imagen +'" alt="pok">')
                 }
