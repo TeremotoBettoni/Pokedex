@@ -19,7 +19,7 @@
             
         }
         #pokemones::-webkit-scrollbar {
-            display: none;
+            -webkit-appearance: none;
         }
         
         #pokecard{
@@ -75,6 +75,11 @@
             background-color: rgb(52, 52, 255); 
             border-radius: 10px;
             color: white;
+        }
+        #pokemones::-webkit-scrollbar-thumb {
+            background-color: #797979;
+            border-radius: 20px;
+            border: 2px solid #f1f2f3;
         }
         #pokemones{
             background-color: rgb(143, 143, 197);
@@ -133,6 +138,11 @@
             height: 100px;
             overflow-x: hidden; /*para manejar todo lo que se desvorda del contenedor*/
             overflow-y: scroll;
+        }
+        #pokemones::-webkit-scrollbar-thumb {
+            background-color: #797979;
+            border-radius: 20px;
+            border: 2px solid #f1f2f3;
         }
         #pokecard{
             background-image: url("assets/img/pokedex\ -\ copia.png");
